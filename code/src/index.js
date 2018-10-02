@@ -20,6 +20,15 @@ class Clock extends React.Component {
     })
   }
 
+  setColorScheme = () => {
+    const hour = this.state.date.getHours()
+    if (hour > 6 && hour < 20) {
+      return "#fff"
+    } else {
+      return "#000"
+    }
+  }
+
   componentDidMount() {
     this.startClock()
   }
@@ -37,11 +46,36 @@ class Clock extends React.Component {
   }
 
   render() {
+    const getColor = {
+      backgroundColor: {
+        backgroundColor: `${this.setColorScheme()}`
+      },
+      color: {
+        color: `${this.setColorScheme()}`
+      }
+    }
+
     return (
       <div>
-        <p class="clock-face">{this.state.date.toLocaleTimeString()}.</p>
-        <button onClick={this.handleStopTimeClick}>Stop</button>
-        <button onClick={this.handleStartTimeClick}>Start</button>
+        <div className="wrapper" style={getColor.backgroundColor}>
+          <div className="container">
+            <div className="clock-container">
+              <p className="clock-face">{this.state.date.toLocaleTimeString()}</p>
+            </div>
+            <div className="button-container">
+              <button
+                onClick={this.handleStopTimeClick}
+                style={getColor.color}>
+                Stop
+              </button>
+              <button
+                onClick={this.handleStartTimeClick}
+                style={getColor.color}>
+                Start
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
