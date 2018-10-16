@@ -1,0 +1,14 @@
+{
+  "main.css": "/simple-clock/static/css/main.b9d1e968.chunk.css",
+  "main.js": "/simple-clock/static/js/main.662768e9.chunk.js",
+  "main.js.map": "/simple-clock/static/js/main.662768e9.chunk.js.map",
+  "static/js/1.f4d10aee.chunk.js": "/simple-clock/static/js/1.f4d10aee.chunk.js",
+  "static/js/1.f4d10aee.chunk.js.map": "/simple-clock/static/js/1.f4d10aee.chunk.js.map",
+  "runtime~main.js": "/simple-clock/static/js/runtime~main.6a07bba3.js",
+  "runtime~main.js.map": "/simple-clock/static/js/runtime~main.6a07bba3.js.map",
+  "static/media/index.css": "/simple-clock/static/media/digital-7.1e670d88.ttf",
+  "static/css/main.b9d1e968.chunk.css.map": "/simple-clock/static/css/main.b9d1e968.chunk.css.map",
+  "index.html": "/simple-clock/index.html",
+  "precache-manifest.83861bb6d5bc4fb15e1e0c0b2a8094a2.js": "/simple-clock/precache-manifest.83861bb6d5bc4fb15e1e0c0b2a8094a2.js",
+  "service-worker.js": "/simple-clock/service-worker.js"
+}
